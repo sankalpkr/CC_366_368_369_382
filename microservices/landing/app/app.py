@@ -34,8 +34,6 @@ def index():
     	result = requests.get("http://exponent:5055/exponent/"+str(number_1)+"/"+str(number_2)).text
     elif operation == 'lcm':
     	result = requests.get("http://lcm:5056/lcm/"+str(number_1)+"/"+str(number_2) , verify=False).text
-    elif operation == 'binomial':
-    	result = requests.get("http://binomial:5057/binomial/"+str(number_1)+"/"+str(number_2)).text
     elif operation == 'equal':
         result = requests.get("http://equal:5058/equal/"+str(number_1)+"/"+str(number_2)).text
     elif operation == 'modulus':

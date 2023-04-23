@@ -49,14 +49,6 @@ services:
       sample:
         aliases:
          - lcm
-  binomial:
-    build: ./landing/app/binomial
-    ports:
-      - 5057:5057 #Binomial
-    networks:
-      sample:
-        aliases:
-         - binomial
   equal:
     build: ./landing/app/equal
     ports:
